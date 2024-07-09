@@ -11,6 +11,7 @@ header {
   padding: 1em;
   text-align: center;
 }
+
 main {
   padding: 1em;
 }
@@ -20,30 +21,55 @@ main {
   padding: 1em;
   margin-bottom: 1em;
   border-radius: 5px;
+  position: relative;
 }
 
 .question-card h2 {
   margin-top: 0;
 }
 
+.show-answer {
+  display: block;
+  margin: 1em 0;
+}
+
 .answer.hidden {
   display: none;
 }
 
-button {
-  margin-right: 0.5em;
+.tags {
+  display: flex;
+  gap: 0.5em;
+}
+
+.tags span {
+  background-color: #eee;
+  border-radius: 3px;
+  padding: 0.2em 0.5em;
 }
 
 .bookmark {
-  background-color: #ffd700;
+  background: url("bookmark-icon.png") no-repeat center center;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
   border: none;
-  padding: 0.5em 1em;
+  position: absolute;
+  top: 1em;
+  right: 1em;
   cursor: pointer;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
-  background-color: #333;
   padding: 1em;
 }
 
